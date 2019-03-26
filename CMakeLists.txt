@@ -14,7 +14,7 @@ SET(SOPHUS_CXX_FLAGS "${SOPHUS_CXX_FLAGS} -std=c++11")
 
 ExternalProject_Add(sophus_src
   GIT_REPOSITORY  https://github.com/luhongquan66/Sophus.git
-  GIT_TAG v0.9.5
+  GIT_TAG master
   UPDATE_COMMAND ""
   CONFIGURE_COMMAND cmake -DCMAKE_INSTALL_PREFIX:PATH=${CATKIN_DEVEL_PREFIX}
   -DCMAKE_BUILD_TYPE=Release ../sophus_src
